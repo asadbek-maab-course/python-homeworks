@@ -1,0 +1,11 @@
+s = "STRing"
+print(s.capitalize())
+print(s.lower())
+print(s.upper())
+print(s.title())
+print(s.swapcase())
+print(s.replace("ing", "ing"))
+print(s.split())
+print(s.index("T"))
+print(s.startswith("STR"))
+print(s.endswith("ing"))

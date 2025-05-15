@@ -1,0 +1,5 @@
+s = input("s = ")
+st = input("start with: ")
+e = input("end with: ")
+print(s, ("" if s.startswith(st) else " not") + "start with", st)
+print(s, ("" if s.endswith(e) else " not") + "end with", e)

@@ -1,2 +1,2 @@
 # python-homeworks
-test
+test qilish uchun

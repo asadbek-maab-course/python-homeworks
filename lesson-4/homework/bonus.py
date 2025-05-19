@@ -1,4 +1,5 @@
 from random import choice
+
 print("Rock(r), Paper(p), Scissors(s)")
 c_user = c_cpu = 0
 wins = {

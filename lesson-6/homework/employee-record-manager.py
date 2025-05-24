@@ -1,29 +1,62 @@
+FILE = '/media/asadbek/D/maab/new/python-homeworks/lesson-6/homework/employees.txt'
+
 def add_employee(name, position, salary):
-    with open('/media/asadbek/D/maab/new/python-homeworks/lesson-6/homework/employees.txt', 'a') as f:
+    with open(FILE, 'a') as f:
         f.write('\n' + ', '.join(
                 [str(id(name + position + str(salary))), name, position, str(salary)]
             )
         )
+    print("------ EMPLOYEE ADDED ------\n")
 
 def view():
-    with open('/media/asadbek/D/maab/new/python-homeworks/lesson-6/homework/employees.txt', 'r') as f:
+    print("------ VIEW ALL ------")
+    with open(FILE, 'r') as f:
         for line in f.readlines():
             print(line, end='')
-        print()
+    print("----------------------\n")
+
 
 def search(eid):
     eid = str(eid)
-    with open('/media/asadbek/D/maab/new/python-homeworks/lesson-6/homework/employees.txt', 'r') as f:
+    with open(FILE, 'r') as f:
         for line in f.readlines():
             if line[:line.index(',')] == eid:
                 return line
-    return "not found"
+    return "EMPLOYEE NOT FOUND"
 
 # TODO update, delete function 
 def update(eid, name, position, salary):
-    with open('/media/asadbek/D/maab/new/python-homeworks/lesson-6/homework/employees.txt', 'r') as f:
-        original = f.read()
+    print("------ EMPLOYEE DATA UPDATED ------\n")
+    text = ""
+    with open(FILE, 'r') as f:
+        for line in  f.readlines():
+            if line.split(', ')[0] == str(eid):
+                text += ', '.join([str(eid), name, position, str(salary)]) + "\n"
+                continue
+            text += line
+    f = open(FILE, 'w')
+    f.write(text)
+    f.close()
+    return True
+
+def delete(eid):
+    print("------ EMPLOYEE DELETED ------\n")
+    text = ""
+    with open(FILE, 'r') as f:
+        for line in  f.readlines():
+            if line.split(', ')[0] == str(eid):
+                continue
+            text += line
+    f = open(FILE, 'w')
+    f.write(text)
+    f.close()
+    return True
+
 # add_employee("Asadbek", "Backend developer", 50000)
-# print(search(1001))
+
 view()
-update(1)
+update(140289708755344, "Asadbek", "Backend developer", 10000)
+view()
+
+delete(140289708755344)
+view()

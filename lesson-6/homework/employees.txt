@@ -1,4 +1,2 @@
 1001, John Doe, Software Engineer
-140289708755344, Asadbek, Backend developer, 50000
-140417571080752, Asadbek, Backend developer, 50000
-139779754789904, Asadbek, Backend developer, 50000
+140466503912784, Asadbek, Backend developer, 50000

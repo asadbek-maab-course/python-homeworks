@@ -1,2 +1,4 @@
-1, John Doe, Software Engineer
+1, John Doe, Software Engineer, 1000
 2, Asadbek, Backend developer, 50000
+6, Ulug'bek, senior frontend, 15000
+7, Azim Pulat, Software Enginer at Google, 35000

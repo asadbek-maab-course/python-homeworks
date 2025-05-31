@@ -24,7 +24,6 @@ def search(eid):
                 return line
     return "EMPLOYEE NOT FOUND"
 
-# TODO update, delete function 
 def update(eid, name, position, salary):
     print("------ EMPLOYEE DATA UPDATED ------\n")
     text = ""

@@ -1,1 +1,2 @@
-API_KEY = "da95009ec650d4cbae76d447661931b3"
+API_KEY = "apikey"
+MOVIE_API_KEY = "apikey"

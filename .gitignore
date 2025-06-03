@@ -1,4 +1,4 @@
 password.txt
 .venv
-./lesson-10/homework/apikey.py
-./lesson-10/homework/__pycache__.py
+./lesson-10/homework/apikeypy
+./lesson-10/homework/__pycache__py

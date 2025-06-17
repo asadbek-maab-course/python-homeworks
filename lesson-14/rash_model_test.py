@@ -1,4 +1,6 @@
+import numpy as np
 # Rash model test
+
 questions = [0 for i in range(10)]
 students = [{'name': 'user_1',
   'questions': [0, 0, 0, 0, 0, 0, 1, 1, 0, 0],

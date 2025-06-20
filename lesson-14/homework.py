@@ -1,3 +1,54 @@
+# task 1
+import numpy as np
+
+@np.vectorize
+def f2c(t):
+    return (t - 32) * (5 / 9)
+
+temps = np.array([32, 68, 100, 212, 77])
+temps_c = f2c(temps)
+
+print(temps_c)
+
+# task 2
+import numpy as np
+
+@np.vectorize
+def power_of_elements(a, b):
+    return np.power(a, b)
+
+nums = [2, 3, 4, 5]
+powers = [1, 2, 3, 4]
+print(power_of_elements(nums, powers))
+
+
+#task 3
+import numpy as np
+
+A = np.array([
+    [4, 5, 6],
+    [3, -1, -1],
+    [2, 1, -2]
+])
+B = np.array([7, 4, 5])
+ans = np.linalg.solve(A, B)
+x, y, z = ans
+print(x, y, z)
+
+# task 4
+import numpy as np
+
+A = np.array([
+    [10, -2, 3],
+    [-2, 8, -1],
+    [3, -1, 6]
+])
+B = np.array([12, -5, 15])
+ans = np.linalg.solve(A, B)
+i1, i2, i3 = ans
+print(i1, i2, i3)
+
+# image task
 import numpy as np
 from PIL import Image
 

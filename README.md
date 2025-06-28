@@ -1,2 +1,2 @@
-# python-homeworks
-test qilish uchun
+# Homeworks
+### MAAB Innovation AI and BI course homeworks

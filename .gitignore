@@ -1,4 +1,8 @@
 password.txt
-.venv
+
 lesson-10/homework/__pycache__.py
 lesson-10/homework/apikey.py
+lesson-16/data/flights
+
+.venv
+.idea

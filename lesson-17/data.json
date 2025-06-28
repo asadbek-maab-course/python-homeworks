@@ -1,0 +1,29 @@
+{
+  "pupils" : [
+    {"id" :  1, "name" : "Sotibolidyev Asadbek"},
+    {"id" :  2, "name" : "Berganboyev Sherzodbek"},
+    {"id" :  3, "name" : "Sobirov Ruslonbek"},
+    {"id" :  4, "name" : "Xushnudov Komiljon"}
+  ],
+  "subjects" : [
+    {"id": 1, "name": "Matematika"},
+    {"id": 2, "name": "Fizika"},
+    {"id": 3, "name": "Ingliz tili"}
+  ],
+  "certificate_type" : [
+    {"id" : 1, "type" : "Milliy"},
+    {"id" : 2, "type" : "CEFR"},
+    {"id" : 3, "type" : "IELTS"},
+    {"id" : 4, "type" : "SAT"}
+  ],
+  "certificates" : [
+    {"id": 1, "pupil_id" : 1, "type" : 1, "subject_id": 1, "score" : "B+"},
+    {"id": 2, "pupil_id" : 1, "type" : 1, "subject_id": 2, "score" : "B"},
+    {"id": 3, "pupil_id" : 2, "type" : 1, "subject_id": 1, "score" : "B+"},
+    {"id": 4, "pupil_id" : 2, "type" : 1, "subject_id": 2, "score" : "B"},
+    {"id": 5, "pupil_id" : 3, "type" : 2, "subject_id": 3, "score" : "B2"},
+    {"id": 6, "pupil_id" : 3, "type" : 1, "subject_id": 1, "score" : "C"},
+    {"id": 7, "pupil_id" : 4, "type" : 3, "subject_id": 3, "score" : "6.0"},
+    {"id": 8, "pupil_id" : 4, "type" : 4, "subject_id": 1, "score" : "1200"}
+  ]
+}
